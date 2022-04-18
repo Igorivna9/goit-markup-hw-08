@@ -1,0 +1,26 @@
+.link-nav {
+    @extend %link;
+    @include centeredFlex ($justify: none);
+
+    @include transition(color);
+
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .link-nav {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .link-nav {
+        line-height: 1.14;
+    }
+}

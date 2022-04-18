@@ -1,0 +1,49 @@
+.client {
+    @extend %list;
+    @include wrapedFlex;
+    justify-content: center;
+
+    margin-bottom: -30px;
+    margin-right: -30px
+}
+
+.client__link {
+    @include centeredFlex;
+    @include transition(border-color);
+    @include transition(fill);
+
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+
+    border: 1px solid $secondary-list-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+
+        .client__icon {
+            fill: $accent-color;
+        }
+    }
+}
+
+.client__icon {
+    fill: $secondary-list-color;
+    @include transition(border-color);
+    @include transition(fill);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .client__link {
+        width: 226px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .client__link {
+        width: 170px;
+    }
+}

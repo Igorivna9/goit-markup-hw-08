@@ -1,0 +1,20 @@
+@mixin centeredFlex($align: center, $justify: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;  
+}
+@mixin wrapedFlex {
+    display: flex;
+    flex-wrap: wrap; 
+}
+@mixin baselinedFlex {
+    display: flex;
+    align-items: baseline;
+}
+@mixin space-betweenedFlex {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin transition($type) {
+    transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,34 @@
+.address {
+    @extend %list;
+    text-align: center;
+}
+
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link-address {
+    @extend %link;
+    color: $primary-white-color;
+}
+
+.address__link-contact {
+    @extend %link;
+    @include transition(color);
+
+    color: $secondary-contact-color;
+    line-height: 1.71;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .address {
+        text-align: left;
+    }
+}

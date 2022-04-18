@@ -1,0 +1,27 @@
+.social-nav {
+    @extend %list;
+    @include wrapedFlex;
+    margin-top: 64px;
+}
+
+.social-nav__item {
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+}
+
+.social-nav__link {
+    @extend %link;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+    .social-nav {
+        display: none;
+    }
+}
+

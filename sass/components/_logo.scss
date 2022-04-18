@@ -1,0 +1,29 @@
+.logo {
+    @extend %link;
+    display: block;
+
+    color: $accent-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: center;
+
+    &--margin {
+        margin-bottom: 20px;
+    }
+}
+
+.logo__header {
+    color: $primary-black-color;
+}
+
+.logo__footer { 
+    color: $primary-white-color;
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        text-align: left;
+    }
+}
