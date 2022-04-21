@@ -406,7 +406,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .auth-nav__item {
+  .auth-nav__item:first-child {
     margin-top: 0;
   }
   .auth-nav__icon {
