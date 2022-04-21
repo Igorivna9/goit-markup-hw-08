@@ -8,7 +8,9 @@
 }
 
 .auth-nav__item {
-    margin-top: 32px;
+    &:first-child {
+        margin-top: 32px;
+    }
 }
 
 @media screen and (max-width: 767px) {

@@ -1,7 +1,7 @@
 .social-nav {
     @extend %list;
     @include wrapedFlex;
-    margin-top: 64px;
+    align-items: flex-end;
 }
 
 .social-nav__item {

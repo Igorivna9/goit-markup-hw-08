@@ -36,10 +36,7 @@
 }
 
 .command-group {
-    width: 206px;
-    padding: 30px 0 24px 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 30px 122px 24px 122px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -55,6 +52,9 @@
             margin-bottom: 30px;
         }
     }
+    .command-group {
+        padding: 30px 74px 24px 74px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .command-card {
@@ -63,6 +63,6 @@
         margin-bottom: 0;
     }
     .command-group {
-        padding-bottom: 30px;
+        padding: 30px 32px;
     }
 }
