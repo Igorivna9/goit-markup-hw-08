@@ -4,12 +4,6 @@
     background-color: $background-bg-color;
 }
 
-// .footer__container {
-//     @include wrapedFlex;
-//     justify-content: space-around;
-//     align-items: baseline;
-// }
-
 .footer__blok {
     margin-bottom: 60px;
 }
@@ -33,9 +27,6 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    // .footer__container {
-    //     justify-content: flex-start;
-    // }
     .footer__container {
         @include space-betweenedFlex;
         width: 1200px;

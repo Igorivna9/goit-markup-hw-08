@@ -7,7 +7,7 @@
 
     padding: 10px 0 10px 0;
     z-index: 3;
-
+    
     .menu__open {
         display: none;
     }
@@ -29,6 +29,7 @@
         fill: $secondary-accent-color;
     }
 }
+
 @media screen and (min-width: 480px) {
     .menu__container {
         width: 480px;
@@ -40,8 +41,7 @@
     .menu {
         display: none;
 
-        // position: absolute;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -56,8 +56,10 @@
 }
 @media screen and (max-width: 767px) {
     .menu__container {
-        @include wrapedFlex;
-        height: 796px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 130vw;
     }
 }
 @media screen and (min-width: 768px) {

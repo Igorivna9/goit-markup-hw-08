@@ -57,6 +57,11 @@
         fill: $primary-white-color;
     }
 }
+@media screen and (max-width: 480px) {
+    .social-list {
+        justify-content: center;
+    }
+}
 @media screen and (min-width: 768px) {
     .social {
         margin: 0;
