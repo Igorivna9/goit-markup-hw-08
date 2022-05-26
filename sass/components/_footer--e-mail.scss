@@ -21,8 +21,8 @@
         &:hover,
         &:focus {
             border-color: $accent-color;
-            background-color: $primary-white-color;
-            color: $title-text-color;
+            background-color: $primary-text-color;
+            color: $primary-white-color;
         }
 
         &::placeholder {

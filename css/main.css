@@ -320,7 +320,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
   }
 }
 
@@ -542,6 +542,10 @@ img {
   .link-nav {
     line-height: 1.14;
   }
+}
+
+section {
+  margin: 0;
 }
 
 .hero {
@@ -1087,8 +1091,8 @@ img {
 
 .e-mail__input input:hover, .e-mail__input input:focus {
   border-color: #2196F3;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: #757575;
+  color: #ffffff;
 }
 
 .e-mail__input input::-webkit-input-placeholder {
